@@ -11,34 +11,7 @@ for compilation write this line in command prompt (javac -classpath {path of tom
 start tomcat server by running startup batch file inside tomcat's bin folder and send request from either browser or REST Client(I have written a demo example below which will help how to use annotations and how to send request)
 
 ## Specify your service pattern and package name to scan inside web.xml file located in WEB-INF folder
-Sample Example (See web.xml File inside WEB-INF in code repository) here I have specified bobby as package name
-<?xml version="1.0" encoding="UTF-8"?>
-<web-app version="2.5" xmlns="http://java.sun.com/xml/ns/javaee"
-xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/webapp_
-2_5.xsd">
-<servlet>
-    <servlet-name>TMWebRock</servlet-name>
-    <servlet-class>com.thinking.machines.webrock.TMWebRock</servlet-class>
-    <init-param>
-    <param-name>SERVICE_PACKAGE_PREFIX</param-name>
-    <param-value>bobby</param-value>
-    </init-param>
-   </servlet>
-    <servlet-mapping>
-    <servlet-name>TMWebRock</servlet-name>
-    <url-pattern>/schoolService/*</url-pattern>
-    </servlet-mapping>
-<servlet>
-    <servlet-name>TMWebRockStarter</servlet-name>
-    <init-param>
-    <param-name>SERVICE_PACKAGE_PREFIX</param-name>
-    <param-value>bobby</param-value>
-    </init-param>
-    <load-on-startup>1</load-on-startup>
-    <servlet-class>com.thinking.machines.webrock.TMWebRockStarter</servlet-class>
-</servlet>
-</web-app>
+Refer web.xml File inside WEB-INF folder
 
 ## Useful Annotations which will help programmers
 - @Path("/pathPattern") applicable for both class as well as method level 
