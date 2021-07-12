@@ -3,6 +3,8 @@ Webrock is a webservices framework to help programmers to avoid burden of writti
 
 ## How to Use
 Download apache tomcat server for java
+Place TMWebRock.jar(already resided in lib folder) inside lib folder inside classes
+Ignore com..... package it is the source code of this framework and remove this folder from classes folder since TMWebRock.jar file is an alternate option of this stuff
 Clone this repo Copy and paste this folder inside tomcat's folder
 edit web.xml according to your project need(How to edit web.xml is written below)
 create a package structure inside classes folder (For demo examples I have create a package named as bobby/foo, bobby/foo inside classes folder)
@@ -28,7 +30,7 @@ Refer web.xml File inside WEB-INF folder
 - @InjectSessionScope this annotation is used to inject Session scope(HttpSession) wrapper inside a service as a Field
 - @InjectRequestScope this annotation is used to inject Request scope(HttpServletRequest) wrapper inside a service as a Field
 
-## Precuations to take
+## Precautions to take
 Do not change code of classes present inside a package started with com,Right now I haven't made any jar file for this project so one has to use classes located inside package started with com
 
 ## Sample Code Examples
