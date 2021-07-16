@@ -294,6 +294,6 @@ return map;
 
 //for request parameter send request like this /test/doSomething?xyz=1001 it will inject this value in that Field annotated with RequestParameter
 ```
-[![Programming Language Used][Java-shield]]
-[![Tools and API's][Java Reflection API]]
+[![Contributors][contributors-shield]][contributors-url]
+[![Forks][forks-shield]][forks-url]
 
