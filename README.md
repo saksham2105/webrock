@@ -9,7 +9,7 @@ Webrock is a webservices framework(Replica of SpringBoot) to help programmers to
 * edit web.xml according to your project need(Refer web.xml file for demo examples)
 * create a package structure inside classes folder (For demo examples I have create a package named as bobby/foo, bobby/foo inside classes folder)
 * create a class inside package and compile it according to latest jdk
-* Paste TMWebRock.jar and gson jar inside libs folder of WEB-INF
+* Paste TMWebRock.jar and gson jar inside libs folder of WEB-INF (TMWebRock.jar is the most important file to use this framework)
 * start tomcat server by running startup batch file inside tomcat's bin folder and send request from either browser or REST Client(I have written a demo example below which will help how to use annotations and how to send request)
 * For Compilation Write -> javac -classpath c:\tomcatFolder\lib\*;c:\tomcatFolder\webapps\project\WEB-INF\lib\*;
 c:\tomcatFolder\webapps\project\WEB-INF\classes;. ClassName.java
