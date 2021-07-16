@@ -2,7 +2,7 @@
 Webrock is a webservices framework to help programmers to avoid burden of writting thousands of classes instead of that what users can do are they can create a package create different - different annotations each for specific purpose to avoid writting meaningless and monotonous code(See sample Examples)
 
 ## How to Use
-Download apache tomcat server for java
+Download [Apache Tomcat] (https://tomcat.apache.org/download-90.cgi) server for java
 Clone this repo Copy and paste this folder inside tomcat's folder
 edit web.xml according to your project need(How to edit web.xml is written below)
 create a package structure inside classes folder (For demo examples I have create a package named as bobby/foo, bobby/foo inside classes folder)
@@ -27,8 +27,6 @@ Refer web.xml File inside WEB-INF folder
 - @InjectApplicationScope this annotation is used to inject application scope(ServletContext) wrapper inside a service as a Field
 - @InjectSessionScope this annotation is used to inject Session scope(HttpSession) wrapper inside a service as a Field
 - @InjectRequestScope this annotation is used to inject Request scope(HttpServletRequest) wrapper inside a service as a Field
-## Precuations to take
-Do not change code of classes present inside a package started with com,Right now I haven't made any jar file for this project so one has to use classes located inside package started with com
 
 ## Sample Code Examples
 *Example 1-
