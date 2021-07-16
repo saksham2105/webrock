@@ -4,13 +4,12 @@ Webrock is a webservices framework to help programmers to avoid burden of writti
 ## How to Use
 * Download [Apache Tomcat](https://tomcat.apache.org/download-90.cgi) server for java
 * Clone this repo Copy and paste this folder inside tomcat's folder
-* edit web.xml according to your project need(How to edit web.xml is written below)
+* edit web.xml according to your project need(Refer web.xml file for demo examples)
 * create a package structure inside classes folder (For demo examples I have create a package named as bobby/foo, bobby/foo inside classes folder)
-* create a class inside package and compile it accoording to latest jdk
-* for compilation write this line in command prompt (javac -classpath {path of tomcat lib}\*;{path of lib folder inside WEB-INF}\*;{path upto classes folder};. Classname.java)
+* create a class inside package and compile it according to latest jdk
 * start tomcat server by running startup batch file inside tomcat's bin folder and send request from either browser or REST Client(I have written a demo example below which will help how to use annotations and how to send request)
 
-## Specify your service pattern and package name to scan inside web.xml file located in WEB-INF folder
+## Specify your service pattern and SERVICE_PACKAGE_PREFIX to scan Classes on server startup inside web.xml file
 Refer web.xml File inside WEB-INF folder
 
 ## Useful Annotations which will help programmers
@@ -53,4 +52,8 @@ public void updateStock()
 System.out.println("Update Stock Invoked");
 }
 }
+
+```
+For Compilation Write -> javac -classpath c:\tomcatFolder\lib\*;c:\tomcatFolder\webapps\project\WEB-INF\lib\*;c:\tomcatFolder\webapps\project\WEB-INF\classes;. ClassName.java
+```sh
 ```
