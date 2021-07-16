@@ -38,6 +38,10 @@ Refer web.xml File inside WEB-INF folder
 - @InjectSessionScope this annotation is used to inject Session scope(HttpSession) wrapper inside a service as a Field
 - @InjectRequestScope this annotation is used to inject Request scope(HttpServletRequest) wrapper inside a service as a Field
 
+## Tools and Technologies Used
+*Java(latest version of Java which supports lambda and streams)
+*Java Reflection API
+
 ## Sample Code Examples
 *Example 1-
 Related to OnStartup,forward and get Feature
@@ -307,4 +311,3 @@ return map;
 
 //for request parameter send request like this /test/doSomething?xyz=1001 it will inject this value in that Field annotated with RequestParameter
 ```
-* Tools and Technologies - Java(Latest version which supports streams and lambda) ,Java Reflection API
