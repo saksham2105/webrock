@@ -54,12 +54,10 @@ System.out.println("Update Stock Invoked");
 }
 
 ```
-```sh
-For Compilation Write -> javac -classpath c:\tomcatFolder\lib\*;c:\tomcatFolder\webapps\project\WEB-INF\lib\*;
+* For Compilation Write -> javac -classpath c:\tomcatFolder\lib\*;c:\tomcatFolder\webapps\project\WEB-INF\lib\*;
 c:\tomcatFolder\webapps\project\WEB-INF\classes;. ClassName.java
 
-For Testing Open your browser or Any RestClient Tool
+* For Testing Open your browser or Any RestClient Tool
 type localhost:portNumber/project/servicePattern/stock/updateStock in address bar 
-for post requests if there is Some data pass it in Body from rest tools
-for query string pass it in url too
-```
+* for post requests if there is Some data pass it in Body from rest tools
+* for query string pass it in url too
