@@ -1,5 +1,5 @@
 ## Overview
-Webrock is a webservices framework to help programmers to avoid burden of writting thousands of class and writting a lot of code inside that classes instead of that what users can do are they can create a package create different different annotations each for specific purpose to avoid writting meaningless and a lot of code
+Webrock is a webservices framework to help programmers to avoid burden of writting thousands of classes instead of that what users can do are they can create a package create different - different annotations each for specific purpose to avoid writting meaningless and monotonous code(See sample Examples)
 
 ## How to Use
 Download apache tomcat server for java
@@ -14,6 +14,7 @@ start tomcat server by running startup batch file inside tomcat's bin folder and
 Refer web.xml File inside WEB-INF folder
 
 ## Useful Annotations which will help programmers
+```sh
 - @Path("/pathPattern") applicable for both class as well as method level 
 - @AutoWired(name="propname") this annotation will help when user wants to inject data in any property from request or session or servletContext(Property level)
 - @Forward(urlPattern) this annotation will forward request to url pattern(Method level)
@@ -27,7 +28,7 @@ Refer web.xml File inside WEB-INF folder
 - @InjectApplicationScope this annotation is used to inject application scope(ServletContext) wrapper inside a service as a Field
 - @InjectSessionScope this annotation is used to inject Session scope(HttpSession) wrapper inside a service as a Field
 - @InjectRequestScope this annotation is used to inject Request scope(HttpServletRequest) wrapper inside a service as a Field
-
+```
 ## Precuations to take
 Do not change code of classes present inside a package started with com,Right now I haven't made any jar file for this project so one has to use classes located inside package started with com
 
