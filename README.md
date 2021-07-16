@@ -1,64 +1,3 @@
-
-[![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
-
-
-
-<!-- PROJECT LOGO -->
-<br />
-<p align="center">
-  <a href="https://github.com/othneildrew/Best-README-Template">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
-  </a>
-
-  <h3 align="center">Best-README-Template</h3>
-
-  <p align="center">
-    An awesome README template to jumpstart your projects!
-    <br />
-    <a href="https://github.com/othneildrew/Best-README-Template"><strong>Explore the docs »</strong></a>
-    <br />
-    <br />
-    <a href="https://github.com/othneildrew/Best-README-Template">View Demo</a>
-    ·
-    <a href="https://github.com/othneildrew/Best-README-Template/issues">Report Bug</a>
-    ·
-    <a href="https://github.com/othneildrew/Best-README-Template/issues">Request Feature</a>
-  </p>
-</p>
-
-
-
-<!-- TABLE OF CONTENTS -->
-<details open="open">
-  <summary>Table of Contents</summary>
-  <ol>
-    <li>
-      <a href="#about-the-project">About The Project</a>
-      <ul>
-        <li><a href="#built-with">Built With</a></li>
-      </ul>
-    </li>
-    <li>
-      <a href="#getting-started">Getting Started</a>
-      <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
-      </ul>
-    </li>
-    <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#license">License</a></li>
-    <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgements">Acknowledgements</a></li>
-  </ol>
-</details>
-
 ## Overview
 Webrock is a webservices framework to help programmers to avoid burden of writting thousands of classes instead of that what users can do are they can create a package create different - different annotations each for specific purpose to avoid writting meaningless and monotonous code(See sample Examples)
 
@@ -116,6 +55,7 @@ public void addStock()
 {
 System.out.println("Add Stock Invoked");
 }
+
 @Path("/updateStock")
 @Get
 @Forward("/stock/addStock")
@@ -174,6 +114,7 @@ System.out.println("Application Scope invoked for employee service "+application
 private Employee secondEmployee;
 @AutoWired(name="test")
 private Employee employee;
+
 @Path("/addEmployee")
 @Get
 @Forward("/member/addMember")
@@ -181,6 +122,7 @@ public void addEmployee()
 {
 System.out.println("Add Employee Invoked");
 }
+
 @Path("/getSecondEmployee")
 @Get
 public void getSecondEmployee()
@@ -196,6 +138,7 @@ System.out.println(e.getName());
 this.applicationScope.setAttribute("test",emp);
 System.out.println("Get Second Employee Chala ");
 }
+
 @Path("/printSecondEmployee")
 @Get
 @Forward("/index.jsp")
@@ -204,6 +147,7 @@ public void printSecondEmployee()
 System.out.println("Print Second Employee Invoked");
 if(this.employee!=null) System.out.println(this.employee.getCode()+","+this.employee.getName());
 }
+
 @Path("/getThirdEmployee")
 @Get
 public void getThirdEmployee()
@@ -219,6 +163,7 @@ System.out.println(e.getName());
 this.applicationScope.setAttribute("xyz",emp);
 System.out.println("Get Third Employee Invoked ");
 }
+
 @Path("/printThirdEmployee")
 @Get
 @Forward("/index.jsp")
@@ -273,6 +218,7 @@ this.applicationDirectory=applicationDirectory;
 }
 @AutoWired(name="test")
 private Employee e;
+
 @Path("/testEmployee")
 @Get
 public void testEmployee()
@@ -286,6 +232,7 @@ else
 System.out.println("Problem");
 }
 }
+
 @Path("/cartoon")
 @Get
 public void cartoon()
@@ -294,6 +241,7 @@ System.out.println("Cartoon invoked");
 if(code!=null) System.out.println(code);
 if(nm!=null) System.out.println(nm);
 }
+
 @Path("/testForArguments")
 @Get
 public Employee testForArguments(int x,String y,Boolean b,Integer z,Character p,@RequestParameter("salary") int salary,@RequestParameter("code") Integer c,@RequestParameter("name") String name)
@@ -308,6 +256,7 @@ System.out.println("Code "+code+" Name "+name+" Salary "+salary);
 }
 return e;
 }
+
 @Path("/doSomething")
 @Get
 @Forward("/test.jsp")
@@ -319,9 +268,10 @@ if(ss!=null) System.out.println("Session scope is not null");
 if(rs!=null) System.out.println("Request Scope is not null");
 if(ad!=null) System.out.println("Application directory is not null");
 }
+
 @Path("/testForPost")
 @Post
-public String testForPost(ApplicationScope as,SessionScope ss,RequestScope rs,ApplicationDirectory ad,@RequestParameter("xyz") Employee emp)
+public String testForPost(ApplicationScope as,SessionScope ss,RequestScope rs,ApplicationDirectory ad,@RequestParameter("xyz") Employee emp) // emp will be null no suitable type
 {
 System.out.println("Test For Post Invoked");
 if(emp!=null) System.out.println(emp.getCode()+","+emp.getName());
@@ -331,6 +281,7 @@ if(rs!=null) System.out.println("Request Scope is not null");
 if(ad!=null) System.out.println("Application directory is not null");
 return "Hello from test for Post";
 }
+
 @Path("/pathVariable")
 @Get
 public void pathVariable(@PathVariable Integer xx,@PathVariable String yy,@RequestParameter("pqr") int pqr)
@@ -339,6 +290,7 @@ if(pqr!=0) System.out.println(pqr);
 if(xx!=null) System.out.println(xx);
 if(yy!=null) System.out.println(yy);
 }
+
 @Path("/xyz")
 @Post
 public HashMap<Integer,String> xyz(@PathVariable Integer a,@PathVariable String b,Employee emp)
