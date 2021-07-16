@@ -4,6 +4,7 @@ Webrock is a webservices framework(Replica of SpringBoot) to help programmers to
 ## How to Use
 * Download [Latest Jdk](https://www.oracle.com/in/java/technologies/javase-downloads.html)
 * Download [Apache Tomcat](https://tomcat.apache.org/download-90.cgi) server for java
+* SET JAVA path and tomcat folder path inside startup.bat file of tomcat resided inside bin folder
 * Clone this repo Copy and paste this folder inside tomcat's folder
 * edit web.xml according to your project need(Refer web.xml file for demo examples)
 * create a package structure inside classes folder (For demo examples I have create a package named as bobby/foo, bobby/foo inside classes folder)
