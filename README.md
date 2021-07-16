@@ -290,7 +290,7 @@ return map;
 }
 }
 
-//for path variable append data in request uri like /test/pathVariable/101/Saksham/102/Ram it will automatically inject this things in path variable
+//for path variable append data in request uri like /test/pathVariable/101/Saksham/102/Ram it will automatically inject this things in path variable Objects
 
 //for request parameter send request like this /test/doSomething?xyz=1001 it will inject this value in that Field annotated with RequestParameter
 ```
