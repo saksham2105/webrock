@@ -39,11 +39,11 @@ Refer web.xml File inside WEB-INF folder
 - @InjectRequestScope this annotation is used to inject Request scope(HttpServletRequest) wrapper inside a service as a Field
 
 ## Tools and Technologies Used
-*Java(latest version of Java which supports lambda and streams)
-*Java Reflection API
+* Java(latest version of Java which supports lambda and streams)
+* Java Reflection API
 
 ## Sample Code Examples
-*Example 1-
+* Example 1-
 Related to OnStartup,forward and get Feature
 ```sh
 package com.project.demo;
@@ -70,7 +70,7 @@ System.out.println("Update Stock Invoked");
 }
 ```
 
-*Example 2- Related to Autowired,Scopes
+* Example 2- Related to Autowired,Scopes
 ```sh
 //Pojo Employee Class
 package com.project.demo;
@@ -184,7 +184,7 @@ if(this.secondEmployee!=null) System.out.println(this.secondEmployee.getCode()+"
 ```
 
 
-*Example 3- Realted to PathVariables,RequestParameter,InjectRequestParameter and many different scopes
+* Example 3- Realted to PathVariables,RequestParameter,InjectRequestParameter and many different scopes
 ```sh
 package com.project.dempo;
 import com.thinking.machines.webrock.annotations.*;
