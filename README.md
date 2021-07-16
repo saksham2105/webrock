@@ -14,6 +14,9 @@ c:\tomcatFolder\webapps\project\WEB-INF\classes;. ClassName.java
 
 * For Testing Open your browser or Any RestClient Tool
 type localhost:portNumber/project/servicePattern/stock/updateStock in address bar 
+
+For example in my testing example I will write
+localhost:9090/tmwebrock/schoolService/test/testForArguments?code=101&name=Saksham
 * for post requests if there is Some data pass it in Body from rest tools
 * for query string pass it in url too
 
@@ -287,7 +290,7 @@ return map;
 }
 }
 
-//for path variable append data in request uri like /testService/pathVariable/101/Saksham/102/Ram it will automatically inject this things in path variable
+//for path variable append data in request uri like /test/pathVariable/101/Saksham/102/Ram it will automatically inject this things in path variable
 
-//for request parameter send request like this /testService/doSomething?xyz=1001 it will inject this value in that Field annotated with RequestParameter
+//for request parameter send request like this /test/doSomething?xyz=1001 it will inject this value in that Field annotated with RequestParameter
 ```
