@@ -2,13 +2,13 @@
 Webrock is a webservices framework to help programmers to avoid burden of writting thousands of classes instead of that what users can do are they can create a package create different - different annotations each for specific purpose to avoid writting meaningless and monotonous code(See sample Examples)
 
 ## How to Use
-Download [https://tomcat.apache.org/download-90.cgi] (Apache Tomcat) server for java
-Clone this repo Copy and paste this folder inside tomcat's folder
-edit web.xml according to your project need(How to edit web.xml is written below)
-create a package structure inside classes folder (For demo examples I have create a package named as bobby/foo, bobby/foo inside classes folder)
-create a class inside package and compile it accoording to latest jdk
-for compilation write this line in command prompt (javac -classpath {path of tomcat lib}\*;{path of lib folder inside WEB-INF}\*;{path upto classes folder};. Classname.java)
-start tomcat server by running startup batch file inside tomcat's bin folder and send request from either browser or REST Client(I have written a demo example below which will help how to use annotations and how to send request)
+* Download [Apache Tomcat](https://tomcat.apache.org/download-90.cgi) server for java
+* Clone this repo Copy and paste this folder inside tomcat's folder
+* edit web.xml according to your project need(How to edit web.xml is written below)
+* create a package structure inside classes folder (For demo examples I have create a package named as bobby/foo, bobby/foo inside classes folder)
+* create a class inside package and compile it accoording to latest jdk
+* for compilation write this line in command prompt (javac -classpath {path of tomcat lib}\*;{path of lib folder inside WEB-INF}\*;{path upto classes folder};. Classname.java)
+* start tomcat server by running startup batch file inside tomcat's bin folder and send request from either browser or REST Client(I have written a demo example below which will help how to use annotations and how to send request)
 
 ## Specify your service pattern and package name to scan inside web.xml file located in WEB-INF folder
 Refer web.xml File inside WEB-INF folder
