@@ -32,4 +32,28 @@ Refer web.xml File inside WEB-INF folder
 Do not change code of classes present inside a package started with com,Right now I haven't made any jar file for this project so one has to use classes located inside package started with com
 
 ## Sample Code Examples
-Refer Classes located inside package started with bobby
+*Example 1-
+Related to OnStartup,forward and get Feature
+```sh
+package com.project.demo;
+import com.thinking.machines.webrock.annotations.*;
+@Path("/stock")
+public class StockService
+{
+@Path("/addStock")
+@Get
+@Forward("/index.jsp")
+@OnStartup(priority=1)
+public void addStock()
+{
+System.out.println("Add Stock Invoked");
+}
+@Path("/updateStock")
+@Get
+@Forward("/stock/addStock")
+public void updateStock()
+{
+System.out.println("Update Stock Invoked");
+}
+}
+```
