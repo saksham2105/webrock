@@ -2,7 +2,7 @@
 Webrock is a webservices framework to help programmers to avoid burden of writting thousands of classes instead of that what users can do are they can create a package create different - different annotations each for specific purpose to avoid writting meaningless and monotonous code(See sample Examples)
 
 ## How to Use
-Download [Apache Tomcat] (https://tomcat.apache.org/download-90.cgi) server for java
+Download [https://tomcat.apache.org/download-90.cgi] (Apache Tomcat) server for java
 Clone this repo Copy and paste this folder inside tomcat's folder
 edit web.xml according to your project need(How to edit web.xml is written below)
 create a package structure inside classes folder (For demo examples I have create a package named as bobby/foo, bobby/foo inside classes folder)
