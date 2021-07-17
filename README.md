@@ -1,3 +1,7 @@
+![GitHub stars](https://img.shields.io/github/stars/saksham2105/webrock) 
+[![Maintenance](https://img.shields.io/badge/maintained-yes-green.svg)](https://github.com/saksham2105/webrock/commits/master)
+[![Website shields.io](https://img.shields.io/badge/website-up-yellow)]()
+
 ## Overview
 Webrock is a webservices framework(Replica of SpringBoot) to help programmers to avoid burden of writting thousands of servlet classes, instead of that what developers can do are they can create a package, create different - different methods in a single or multiple class and can create annotation each for specific purpose to avoid writting meaningless and monotonous code(See sample Examples)
 
@@ -41,8 +45,7 @@ Refer web.xml File inside WEB-INF folder
 - @InjectRequestScope this annotation is used to inject Request scope(HttpServletRequest) wrapper inside a service as a Field
 
 ## Tools and Technologies Used
-* Java(latest version of Java which supports lambda and streams)
-* Java Reflection API
+![](https://img.shields.io/badge/Java%20Core%20and%20Advance-%3C%2F%3E-blueviolet) ![](https://img.shields.io/badge/Java%20Reflection%20API-%3C%2F%3E-yellow)
 
 ## Sample Code Examples
 * Example 1-
