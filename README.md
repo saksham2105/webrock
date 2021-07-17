@@ -45,7 +45,7 @@ Refer web.xml File inside WEB-INF folder
 - @InjectRequestScope this annotation is used to inject Request scope(HttpServletRequest) wrapper inside a service as a Field
 
 ## Tools and Technologies Used
-![](https://img.shields.io/badge/Java%20Core%20and%20Advance-%3C%2F%3E-blueviolet) ![](https://img.shields.io/badge/Java%20Reflection%20API-%3C%2F%3E-yellow)
+![](https://img.shields.io/badge/Java%20Core%20and%20Advance-%3C%2F%3E-blueviolet) ![](https://img.shields.io/badge/Java%20Reflection%20API-%3C%2F%3E-yellow) ![](https://img.shields.io/badge/Google's%20gson%20Library-%3C%2F%3E-yellow)
 
 ## Sample Code Examples
 * Example 1-
