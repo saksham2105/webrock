@@ -45,7 +45,7 @@ Refer web.xml File inside WEB-INF folder
 - @InjectRequestScope this annotation is used to inject Request scope(HttpServletRequest) wrapper inside a service as a Field
 
 ## Tools and Technologies Used
-![](https://img.shields.io/badge/Java%20Core%20and%20Advance-%3C%2F%3E-blueviolet) ![](https://img.shields.io/badge/Java%20Reflection%20API-%3C%2F%3E-yellow) ![](https://img.shields.io/badge/Google's%20gson%20Library-%3C%2F%3E-yellow)
+![](https://img.shields.io/badge/Java%20Core%20and%20Advance-%3C%2F%3E-blueviolet) ![](https://img.shields.io/badge/Java%20Reflection%20API-%3C%2F%3E-yellow) ![](https://img.shields.io/badge/Google's%20gson%20Library-%3C%2F%3E-yellow) ![](https://img.shields.io/badge/J2EE%20Tomcat-%3C%2F%3E-blueviolet)
 
 ## Sample Code Examples
 * Example 1-
@@ -189,7 +189,7 @@ if(this.secondEmployee!=null) System.out.println(this.secondEmployee.getCode()+"
 ```
 
 
-* Example 3- Realted to PathVariables,RequestParameter,InjectRequestParameter and many different scopes
+* Example 3- Related to Testcases for PathVariable,RequestParameter,InjectRequestParameter and different scopes
 ```sh
 package com.project.dempo;
 import com.thinking.machines.webrock.annotations.*;
