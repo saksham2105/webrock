@@ -29,7 +29,7 @@ localhost:9090/tmwebrock/schoolService/test/testForArguments?code=101&name=Saksh
 ## Specify your service pattern and SERVICE_PACKAGE_PREFIX to scan Classes on server startup inside web.xml file
 Refer web.xml File inside WEB-INF folder
 
-## Useful Annotations which will help programmers
+## Useful Annotations which will help while developing any backend
 * @Path("/pathPattern") applicable for both class as well as method level 
 * @AutoWired(name="propname") this annotation will help when user wants to inject data in any property from request or session or servletContext(Property level)
 - @Forward(urlPattern) this annotation will forward request to url pattern(Method level)
